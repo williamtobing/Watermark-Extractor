@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="ApHome" fx:id="pageHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PageHomeController">
+   <children>
+      <Label id="labelTitle" alignment="CENTER" contentDisplay="CENTER" layoutY="65.0" prefHeight="71.0" prefWidth="1280.0" text="Dynamic Software Watermarking with Collberg-Thomborson Algorithm and Parent Pointer Graph" textAlignment="CENTER">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="165.0" prefHeight="20.0" prefWidth="1280.0" text="D3TI-07">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button id="btnHome" fx:id="btnHome" alignment="CENTER" layoutX="600.0" layoutY="605.0" mnemonicParsing="false" onAction="#getHome" prefHeight="27.0" prefWidth="89.0" text="Extractor">
+         <font>
+            <Font name="Bell MT Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="200.0" layoutX="545.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Product/TA/ekstraktor/src/img/del.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutY="113.0" prefHeight="22.0" prefWidth="1280.0" text="on Android Application">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
