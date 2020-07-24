@@ -5,8 +5,6 @@ package controller;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -37,21 +35,20 @@ public class PageHomeController implements Initializable {
      * Initializes the controller class.
      */
     @Override
-    public void initialize(URL url, ResourceBundle rb) 
-    {
+    public void initialize(URL url, ResourceBundle rb) {
         // TODO
         showImage();
-    }    
+    }
 
     @FXML
-    private void getHome(ActionEvent event) throws IOException 
-    {
-         AnchorPane panes = FXMLLoader.load(getClass().getResource("/view/pageWatermark.fxml"));
-    
-         pageHome.getChildren().setAll(panes);
+    private void getHome(ActionEvent event) throws IOException {
+        AnchorPane panes = FXMLLoader.load(getClass().getResource("/view/pageWatermark.fxml"));
+
+        pageHome.getChildren().setAll(panes);
     }
+
     public void showImage() {
-    
+
         try {
 
             Image image = new Image("/img/del.png");
@@ -60,9 +57,7 @@ public class PageHomeController implements Initializable {
 
             imageView.setCache(true);
 
-        } 
-        catch (Exception e) 
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

@@ -13,15 +13,15 @@ import java.util.List;
  * @author
  */
 public class Attack {
-  
+
     /**
      * Shuffle the list
+     *
      * @param listEdge
-     * @return 
+     * @return
      */
-    public static List<String> randomizeTheList(List<String> listEdge)
-    {
-       Collections.shuffle(listEdge);
+    public static List<String> randomizeTheList(List<String> listEdge) {
+        Collections.shuffle(listEdge);
         return listEdge;
-    }    
+    }
 }
